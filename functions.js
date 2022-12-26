@@ -11,7 +11,7 @@ const addToZero = arr => {
     return false
 }
 
-// The runtime for the function addToZero is O(n^2)
+// The runtime for the function addToZero is O(n^2), and the space complexity is O(n)
 
 console.log("Results for addToZero")
 console.log( addToZero([]), addToZero([1]), addToZero([1, 2, 3]), addToZero([1, 2, 3, -2]))
@@ -39,7 +39,7 @@ console.log('---------------------------------')
 
 const hasUniqueChars = (str) => [...new Set([...str])].join('') === str
 
-// The runtime for the function hasUniqueChars is O(n)
+// The runtime for the function hasUniqueChars is O(n), and the space complexity is O(n)
 
 console.log("Results for hasUniqueChars")
 console.log(hasUniqueChars('Monday'), hasUniqueChars('Moonday'))
@@ -50,7 +50,7 @@ console.log('---------------------------------')
 
 const isPangram = (str) => [...new Set([...str.toLowerCase()])].sort().splice(-26).join('') === 'abcdefghijklmnopqrstuvwxyz'
 
-// The runtime for the function isPangram is O(n)
+// The runtime for the function isPangram is O(n), and the space complexity is O(n)
 
 console.log("Results for is Pangram")
 console.log(isPangram("The quick brown fox jumps over the lazy dog!"), isPangram("I like cats, but not mice"))
@@ -86,7 +86,7 @@ const findLongestWord = (arr) => {
     return largest
 }
 
-// The runtime for the function findLongestWord is O(n)
+// The runtime for the function findLongestWord is O(n), and the space complexity is O(n)
 
 console.log("Results for findLongestWord")
 console.log(findLongestWord(["hi", "hello"]))
